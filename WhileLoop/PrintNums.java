@@ -1,4 +1,4 @@
-package Loops;
+package WhileLoop;
 
 public class PrintNums {
     public static void main(String[] args) {

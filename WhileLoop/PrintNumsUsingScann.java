@@ -1,17 +1,16 @@
-package Loops;
+package WhileLoop;
 import java.util.Scanner;
-public class SumOfNNum {
+public class PrintNumsUsingScann {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the value of n: ");
+        System.out.print("Enter the no: ");
         int n=sc.nextInt();
-        int count=1,summ=0;
+        int count=1;
         while(count<=n){
-            summ+=count;
-            
+            System.out.print(count+" ");
             count++;
         }
-        System.out.println(summ);
+        System.out.println();
         sc.close();
     }
     
