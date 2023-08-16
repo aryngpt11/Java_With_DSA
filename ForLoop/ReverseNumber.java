@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class ReverseNumber {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner c=new Scanner(System.in);
         System.out.print("Enter value: ");
-        int i=sc.nextInt();
+        int i=c.nextInt();
 
 
         for (;i != 0; i/= 10) {
@@ -14,7 +14,7 @@ public class ReverseNumber {
             System.out.print(digit);
             
         }
-        sc.close();
+        c.close();
         
 
     }  
