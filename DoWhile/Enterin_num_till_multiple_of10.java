@@ -14,6 +14,7 @@ public class Enterin_num_till_multiple_of10 {
                 break ;
             }
         }while(true);
+        sc.close();
     }
     
 }
