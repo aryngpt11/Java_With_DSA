@@ -17,7 +17,7 @@ public class HollowRect {
 
 }
     public static void main(String[] args) {
-        Hollow_rect(10,5 );
+        Hollow_rect(10,10 );
         
     }
     
