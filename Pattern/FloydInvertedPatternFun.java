@@ -1,6 +1,6 @@
 package Pattern;
 
-public class InvertedPatternFun {
+public class FloydInvertedPatternFun {
     public static void InvertedWithCounting(int n){
         int num=55;
         for(int i=1;i<=n;i++){

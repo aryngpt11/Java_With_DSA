@@ -1,6 +1,6 @@
 package Pattern;
 
-public class PatternFun2 {
+public class FloydPattern {
     public static void main(String[] args) {
         int n=10,num=1;
         
