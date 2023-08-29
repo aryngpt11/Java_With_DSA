@@ -4,7 +4,7 @@ public class ArrCreation {
     public static void main(String[] args) {
         int arr[]=new int[5];
         Scanner sc=new Scanner(System.in);
-        System.out.println(arr.length);
+        System.out.println("Length Of Array: "+arr.length);
         arr[0]=sc.nextInt();
         arr[1]=sc.nextInt();
         arr[2]=sc.nextInt();
