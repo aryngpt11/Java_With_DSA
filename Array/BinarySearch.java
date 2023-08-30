@@ -23,7 +23,8 @@ public class BinarySearch {
         Scanner sc=new Scanner(System.in);
         int num[]={2,4,6,8,10,12};
         System.out.print("Enter the value of key: ");
-        int key=sc.nextInt();System.out.println(binary(num, key));
+        int key=sc.nextInt();
+        System.out.println(binary(num, key));
         sc.close(); 
     }
     
