@@ -6,7 +6,7 @@ public class PairsArray {
             int curr=num[i];
             for(int j=i+1;j<num.length;j++){
                 System.out.print("("+ curr+","+num[j]+")");
-            }
+            } 
             System.out.println();
         }
 
