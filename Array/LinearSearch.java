@@ -14,7 +14,7 @@ public class LinearSearch {
         int num[]={2,3,4,5,6,7,1,2,10};
         int index=Linear(num, key);
         if(index==-1){
-            System.out.println("Nbot Found");
+            System.out.println("N,ot Found");
         }
         else{System.out.println("key at index: "+index);}
         
@@ -22,5 +22,4 @@ public class LinearSearch {
 
 
 }
-
 
