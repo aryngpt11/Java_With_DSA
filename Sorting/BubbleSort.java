@@ -11,19 +11,24 @@ public class BubbleSort {
                 }
             } 
         }
+        for(int i=0;i<num.length;i++){
+            System.out.print(num[i]+" ");
+
+        }
+        System.out.println();
     } 
-    public static void printnum(int num[]){
+    /* public static void printnum(int num[]){
         for(int i=0;i<num.length;i++){
             System.out.print(num[i]+" ");
 
         }
         System.out.println();
 
-    }
+    } */
     public static void main(String[] args) {
         int num[]={5,4,1,3,2};
          bubblesort(num); 
-        printnum(num); 
+       /*  printnum(num);  */
         
     }   
     
