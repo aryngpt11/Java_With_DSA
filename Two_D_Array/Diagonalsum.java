@@ -1,9 +1,9 @@
 package Two_D_Array;
 
 public class Diagonalsum {
-    public static int Diagonal(int m[][]){
+    public static int Diagonal(int m[][]){ //O(n^2)
         int summ=0; 
-        for(int i=0;i<m.length;i++){
+        /* for(int i=0;i<m.length;i++){
             for(int j=0;j<m[0].length;j++){
                 if(i==j){
                     summ+=m[i][j];
@@ -13,7 +13,15 @@ public class Diagonalsum {
                     summ+=m[i][j];
                 }
             }
-            
+             */
+            for(int i=0;i<m.length;i++){
+                //pd
+                summ+=m[i][i];
+                //sd
+                if(i!=m.length-i-1){
+                    summ+=m[i][m.length-i-1];
+                }
+                
 
         }
         return summ;
