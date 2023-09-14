@@ -11,7 +11,10 @@ public class Substringg {
     public static void main(String[] args) {
         //substring
         String str="Hello World";
-        System.out.println(substring(str, 0, 5));
+        //inbuilt function in java
+       System.out.println(str.substring(0, 5)); 
+       //or
+        //System.out.println(substring(str, 0, 5));
     }
     
 }
