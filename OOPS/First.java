@@ -6,7 +6,7 @@ public class First {
         p1.setColor("blue");
         System.out.println(p1.color);
          
-    }
+    } 
     
 }
 class Pen{
