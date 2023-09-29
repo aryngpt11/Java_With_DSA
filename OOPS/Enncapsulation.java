@@ -1,6 +1,6 @@
 package OOPS;
 
-public class Getttnsett {
+public class Enncapsulation {
     public static void main(String[] args) {
         Penn p = new Penn();
 
