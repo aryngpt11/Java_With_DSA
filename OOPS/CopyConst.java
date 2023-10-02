@@ -14,8 +14,8 @@ public class CopyConst {
         s2.password = "xyz";
         
         // Print s1 and s2
-        System.out.println("s1: " + s1.name + ", " + s1.roll + ", " + s1.password);
-        System.out.println("s2: " + s2.name + ", " + s2.roll + ", " + s2.password);
+        System.out.println( s1.name + ", " + s1.roll + ", " + s1.password);
+        System.out.println( s2.name + ", " + s2.roll + ", " + s2.password);
     }
 }
 
