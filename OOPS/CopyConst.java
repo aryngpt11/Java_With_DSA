@@ -2,13 +2,13 @@ package OOPS;
 
 public class CopyConst {
     public static void main(String[] args) {
-        Studdent s1 = new Studdent(); // Use the correct class name
+        Studdent s1 = new Studdent(); 
         s1.name = "Aryan";
         s1.roll = 123;
         s1.password = "abcd";
         
         // Use the copy constructor to create s2
-        Studdent s2 = new Studdent(s1); // Use the correct class name
+        Studdent s2 = new Studdent(s1); 
         
         // Modify s2's password
         s2.password = "xyz";
