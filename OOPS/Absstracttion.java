@@ -10,6 +10,7 @@ public class Absstracttion {
     c.eat();
     c.walk(); */
     Mustang m=new Mustang();
+    m.eat();
    } 
 }
 abstract class Animal1{
