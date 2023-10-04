@@ -11,7 +11,6 @@ class Animall{
         System.out.println("eats Anything");
     }
 }
-
 class Deer extends Animall{
     void eat(){
         System.out.println("Eat grass");
