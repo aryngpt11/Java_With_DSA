@@ -14,7 +14,7 @@ public class StaticcKeyw {
 class Sttuudent{
     String name;
     int roll;
-    String schoolName;
+     String schoolName;
     void setName(String name){
         this.name=name;
     }
