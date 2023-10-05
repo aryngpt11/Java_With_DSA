@@ -9,11 +9,21 @@ public class PrintN_Num {
         System.out.print(n+" ");
         printDec(n-1);
     }
+    public static void printInc(int n){
+        if(n==1){
+            System.out.print(n+" ");
+            return;
+        }
+        printInc(n-1); 
+        System.out.print(n+" ");
+        
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the value of n: ");
         int n=sc.nextInt();
         printDec(n);
+        printInc(n);
         sc.close();
     }
     
