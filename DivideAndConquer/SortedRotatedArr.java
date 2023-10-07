@@ -15,7 +15,7 @@ public class SortedRotatedArr {
             } else {
                 return search(arr, tar, mid + 1, ei);
             }
-        } else {
+        } else { 
             if (arr[mid] <= tar && tar <= arr[ei]) {
                 return search(arr, tar, mid + 1, ei);
             } else {
