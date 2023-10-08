@@ -7,6 +7,8 @@ public class FirstExamp {
         ArrayList<Boolean>list2=new ArrayList<>();
         list.add(11);
         list.add(27);
+        //0r
+        list.add(2,1127);
         list1.add("Aryan");
         list1.add("Arya");
         list2.add(true);
@@ -18,6 +20,13 @@ public class FirstExamp {
         //get operation
         int element=list.get(1);
         System.out.println(element);
+
+        //Delete
+        /* list2.remove(false);
+        System.out.println(list2); */
+        //set value
+        list2.set(1,true);
+        System.out.println(list2);
 
     }
     
