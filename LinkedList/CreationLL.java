@@ -11,7 +11,7 @@ public class CreationLL {
     }
     public static Node head;
     public static Node tail;
-    public static int size;
+    public static int size;//to get the size of the LL
 
     public void addFirst(int data){
         Node newNode=new Node(data);
@@ -47,6 +47,9 @@ public class CreationLL {
         }
         System.out.println("null");
     }
+
+
+    //Add in the middle of the linked list
     public void add(int idx,int data){
         if(idx==0){
             addFirst(data);
@@ -64,6 +67,52 @@ public class CreationLL {
         newNode.next=temp.next;
         temp.next=newNode;
     }
+
+    // remove the first element from the linked list
+
+    public int removeFirst(){
+        if(size==0){
+            System.out.println("ll is empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size==1){
+            int val=head.data;
+            head=tail=null;
+            size=0;
+            return val;
+        }
+        int val=head.data;
+        head=head.next;
+        size--;
+        return val;
+    }
+    // remove the last element from the linked list
+
+    public int removeLast(){
+        if(size==0){
+            System.out.println("ll is empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size==1){
+            int val=head.data;
+            head=tail=null;
+            size=0;
+            return val;
+        }
+        Node prev=head;
+        for(int i=0;i<size-2;i++){
+            prev=prev.next;
+        }
+        int val=prev.next.data;
+        prev.next=null;
+        tail=prev;
+        size--;
+        return val;
+
+    }
+
+
+
     public static void main(String[] args) {
         CreationLL ll=new CreationLL();
         //ll.print();
@@ -76,8 +125,11 @@ public class CreationLL {
         ll.addLast(4);
         ll.add(2,9);
         ll.print();
-        System.out.println("The size o the given LL is: "+ll.size);
-        
+        //System.out.println("The size o the given LL is: "+ll.size);
+        /* ll.removeFirst();
+        ll.print(); */
+        ll.removeLast();
+        ll.print();
     }
     
 }
