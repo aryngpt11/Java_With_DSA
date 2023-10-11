@@ -11,9 +11,11 @@ public class CreationLL {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public void addFirst(int data){
         Node newNode=new Node(data);
+        size++;
         if(head==null){
             head=tail=newNode;
             return;
@@ -24,6 +26,7 @@ public class CreationLL {
     }
     public void addLast(int data){
         Node newNode=new Node(data);
+        size++;
         if(head==null){
             head=tail=newNode;
             return;
@@ -49,7 +52,9 @@ public class CreationLL {
             addFirst(data);
             return;
         }
+        
         Node newNode=new Node(data);
+        size++;
         Node temp=head;
         int i=0;
         while(i<idx-1){
@@ -71,6 +76,7 @@ public class CreationLL {
         ll.addLast(4);
         ll.add(2,9);
         ll.print();
+        System.out.println("The size o the given LL is: "+ll.size);
         
     }
     
