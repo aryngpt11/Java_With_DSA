@@ -128,6 +128,27 @@ public class CreationLL {
     }
 
 
+    //recursive search
+    public int helper(Node head,int key){
+        if(head==null){
+            return -1;
+        }
+        if(head.data==key){
+            return 0;
+        }
+        int idx=helper(head.next, key);
+        if(idx==-1){
+            return -1;
+        }
+        return idx+1;
+
+    }
+    public int recSearch(int key){
+        return helper(head, key);
+
+    }
+
+
     public static void main(String[] args) {
         CreationLL ll=new CreationLL();
         //ll.print();
@@ -145,8 +166,10 @@ public class CreationLL {
         ll.print(); */
         ll.removeLast();
         ll.print();
-        System.out.println(ll.itrSearch(3));
-        System.out.println(ll.itrSearch(10));
+        /* System.out.println(ll.itrSearch(3));
+        System.out.println(ll.itrSearch(10)); */
+        System.out.println(ll.recSearch(3));
+        System.out.println(ll.recSearch(10));
     }
     
 }
