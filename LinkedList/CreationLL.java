@@ -148,6 +148,22 @@ public class CreationLL {
 
     }
 
+    //reverse a LL
+
+    public void reverse(){
+        Node prev=null;
+        Node curr=tail=head;
+        Node next;
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+
+        }
+        head=prev;
+    }
+
 
     public static void main(String[] args) {
         CreationLL ll=new CreationLL();
@@ -170,6 +186,8 @@ public class CreationLL {
         System.out.println(ll.itrSearch(10)); */
         System.out.println(ll.recSearch(3));
         System.out.println(ll.recSearch(10));
+        ll.reverse();
+        ll.print();
     }
     
 }
