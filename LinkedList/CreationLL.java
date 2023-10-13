@@ -165,6 +165,33 @@ public class CreationLL {
     }
 
 
+    //find and reverse Nth node from end
+
+    public void deleteNthfromEnd(int n){
+        int sz=0;
+        Node temp=head;
+        while(temp!=null){
+            temp=temp.next;
+            sz++;
+        }
+        if(n==sz){
+            head=head.next;
+            return;
+        }
+        int i=1;
+        int iToFind=sz-n;
+        Node prev=head;
+        while(i<iToFind){
+            prev=prev.next;
+            i++;
+
+        }
+        prev.next=prev.next.next;
+        return;
+
+    }
+
+
     public static void main(String[] args) {
         CreationLL ll=new CreationLL();
         //ll.print();
@@ -172,21 +199,23 @@ public class CreationLL {
         //ll.print();
         ll.addFirst(1);
         //ll.print();
-        ll.addLast(3);
-        //ll.print();
         ll.addLast(4);
-        ll.add(2,9);
+        //ll.print();
+        ll.addLast(5);
+        ll.add(2,3);
         ll.print();
         //System.out.println("The size o the given LL is: "+ll.size);
         /* ll.removeFirst();
         ll.print(); */
-        ll.removeLast();
+        /* ll.removeLast();
         ll.print();
-        /* System.out.println(ll.itrSearch(3));
-        System.out.println(ll.itrSearch(10)); */
+         System.out.println(ll.itrSearch(3));
+        System.out.println(ll.itrSearch(10)); 
         System.out.println(ll.recSearch(3));
         System.out.println(ll.recSearch(10));
         ll.reverse();
+        ll.print(); */
+        ll.deleteNthfromEnd(3);
         ll.print();
     }
     
