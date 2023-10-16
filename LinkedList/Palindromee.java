@@ -83,9 +83,21 @@ public class Palindromee {
         }
         System.out.println("null");
     }
+    public static boolean isCycle(){
+        Node slow=head;
+        Node fast=head;
+        while(fast !=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast){
+                return true;
+            }
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
-        Palindromee ll = new Palindromee();
+       /*  Palindromee ll = new Palindromee();
 
         ll.addLast(1);
         ll.addLast(2);
@@ -93,6 +105,11 @@ public class Palindromee {
         ll.addLast(1);
 
         ll.print();
-        System.out.println(ll.checkPalindrome());
-    }
+        System.out.println(ll.checkPalindrome());*/
+        head=new Node(1);
+        head.next=new Node(2);
+        head.next.next=new Node(3);
+        head.next.next.next=head;
+        System.out.println(isCycle());
+    } 
 }
